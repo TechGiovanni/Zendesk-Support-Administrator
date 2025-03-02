@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://imgur.com/g4QNc8p" alt="osTicket logo"/>https://imgur.com/g4QNc8p
+<img src="https://i.imgur.com/g4QNc8p.png" alt="osTicket logo"/>
 </p>
 
 <h1># Implementing-Zendesk-Ticketing-System-Incident-Management</h1>
