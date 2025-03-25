@@ -5,11 +5,11 @@
 <h1># Zendesk Support Administrator</h1>
 This tutorial outlines the utilisation of Zendesk for managing tickets.<br />
 
-<!--
+
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How To Install osTicket with Prerequisite Files](https://youtu.be/54JGs9JWCwU)
--->
+- ### [YouTube: Zendesk Support Administrator](https://youtu.be/54JGs9JWCwU)
+
 
 <h2>Environments and Technologies Used</h2>
 
