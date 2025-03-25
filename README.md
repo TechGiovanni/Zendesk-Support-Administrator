@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/g4QNc8p.png" alt="osTicket logo"/>
 </p>
 
-<h1># Implementing-Zendesk-Ticketing-System-Incident-Management</h1>
+<h1># Zendesk Support Administrator</h1>
 This tutorial outlines the utilisation of Zendesk for managing tickets.<br />
 
 <!--
