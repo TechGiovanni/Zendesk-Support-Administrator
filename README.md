@@ -26,13 +26,31 @@ Mastering the use of Zendesk for managing tickets and enterprise support.<br />
 - Zendesk Free trial
 
 
+# <h2>Our example company</h2>
+
+The scalability of your setup highly depends on the early planning phase. Before we can go through the process of such an evaluation, we need to establish a far-reaching scenario by creating a fictitious example company. For the sake of simplicity and not having to refer to the company as an example throughout this lab, we will call it itsolutions.
+
+itsolutions is a Canadian tech company selling their own software online. They also offer some hardware created by a third-party in order to guarantee better compatibility and support.
+
+Next to offering their software for individual purchase, customers can choose a yearly subscription allowing them access to the full range of software solutions. These customers are called "VIPs" and can purchase the hardware to a discounted price. As part of the subscription, VIP customers are supposed to receive faster responses from the support team.
+
+itsolutions is still considered a start-up and cannot afford to provide customer-service in more than two languages (English and French), but are planning to offer support in more languages later on.
+
+
+<h2>Desired setup</h2>
+<br>
+<p align="center">
+<img src=".png"/>
+</p>
+
+
 # <h2>Installation Steps</h2>
 
 - Create a virtual network
 - create an address space on that virtual network
 <br>
 <p align="center">
-<img src="https://imgur.com/8OxefDk.png"/>
+<img src=".png"/>
 </p>
 
 - Create the virtual machine - Server 2022
