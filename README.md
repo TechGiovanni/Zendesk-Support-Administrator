@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/g4QNc8p.png" alt="osTicket logo"/>
 </p>
 
-<h1># Zendesk Support Administrator</h1>
+<h1>Zendesk Support Administrator</h1>
 Mastering the use of Zendesk for managing tickets and enterprise support.<br />
 
 
