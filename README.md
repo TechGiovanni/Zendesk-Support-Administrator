@@ -8,7 +8,8 @@ This tutorial outlines the utilisation of Zendesk for managing tickets.<br />
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: Zendesk Support Administrator](https://youtu.be/54JGs9JWCwU)
+(In progress)
+- ### [YouTube: Zendesk Support Administrator]()
 
 
 <h2>Environments and Technologies Used</h2>
