@@ -43,6 +43,19 @@ itsolutions is still considered a start-up and cannot afford to provide customer
 <img src=".png"/>
 </p>
 
+We will have different channels of receiving tickets from regular and VIP users. Within our Ticket Views, we will divide and pool certain tickets together. The company only hires Bilingual Agents so we only group the tickets based on a tier system and a specific group for VIPs.
+While VIP tickets will land directly in the corresponding VIP Support view, all non-VIP tickets will initially land in the Tier 1 view. Agents can then decide to push them into the Tier 2 view if the customer needs more technical help.
+
+Our Ticketing Workflow:
+1. A customer creates a ticket via one of our open channels.
+2. Depending on the channel, tickets are assigned to one of the two escalation types.
+3. If our customer is a VIP, we mark the ticket accordingly.
+4. The ticket is now either in the Tier 1 or our VIP view.
+5. An agent opens the ticket and decides whether to answer or push the ticket to the Tier 2 view for more complex support requests.
+6.The customer receives a reply.
+7. If the customer replies, the ticket shows up in the agent's own view. The agent receives an e-mail notification.
+8. If the agent does not update the ticket with a given time frame, the ticket is moved back to its initial view.
+9. Another agent can now pick up the ticket.
 
 # <h2>Installation Steps</h2>
 
