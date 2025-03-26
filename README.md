@@ -25,7 +25,10 @@ Mastering the use of Zendesk for managing tickets and enterprise support.<br />
 
 - Zendesk Free trial
 
-
+<br>
+<br>
+<br>
+<br>
 <h2>Our example company "itsolutions"</h2>
 
 The scalability of your setup highly depends on the early planning phase. Before we can go through the process of such an evaluation, we need to establish a far-reaching scenario by creating a fictitious example company. For the sake of simplicity and not having to refer to the company as an example throughout this lab, we will call it itsolutions.
