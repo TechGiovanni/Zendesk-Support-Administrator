@@ -3,7 +3,7 @@
 </p>
 
 <h1># Zendesk Support Administrator</h1>
-This tutorial outlines the utilisation of Zendesk for managing tickets.<br />
+Mastering the use of Zendesk for managing tickets and enterprise support.<br />
 
 
 <h2>Video Demonstration</h2>
