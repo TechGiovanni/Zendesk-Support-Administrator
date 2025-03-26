@@ -24,3 +24,35 @@ Mastering the use of Zendesk for managing tickets and enterprise support.<br />
 <h2>List of Prerequisites</h2>
 
 - Zendesk Free trial
+
+
+# <h2>Installation Steps</h2>
+
+- Create a virtual network
+- create an address space on that virtual network
+<br>
+<p align="center">
+<img src="https://imgur.com/8OxefDk.png"/>
+</p>
+
+- Create the virtual machine - Server 2022
+- use the same virtual network
+- create a subnet for the Active Directory Domain Server + click save
+
+
+<h2>The Zendesk environment</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
