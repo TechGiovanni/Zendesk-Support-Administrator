@@ -43,6 +43,7 @@ itsolutions is still considered a start-up and cannot afford to provide customer
 <img src="https://imgur.com/K0Tt867.png"/>
 </p>
 
+<p>
 We will have different channels of receiving tickets from regular and VIP users. Within our Ticket Views, we will divide and pool certain tickets together. The company only hires Bilingual Agents so we only group the tickets based on a tier system and a specific group for VIPs.
 While VIP tickets will land directly in the corresponding VIP Support view, all non-VIP tickets will initially land in the Tier 1 view. Agents can then decide to push them into the Tier 2 view if the customer needs more technical help.
 
@@ -73,7 +74,7 @@ Reporting
 Zendesk apps
 
 So lets get started! :)
-
+</p>
 
 
 <h2>Agent Roles, Groups, Organizations, and User Tags</h2>
