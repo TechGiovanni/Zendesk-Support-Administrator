@@ -72,10 +72,20 @@ Global Zendesk settings / Security settings
 Reporting
 Zendesk apps
 
-# <h2>Installation Steps</h2>
+So lets get started! :)
 
-- Create a virtual network
-- Create an address space on that virtual network
+<h2>Agent Roles, Groups, Organizations, and User Tags</h2>
+
+- Here we are going to Manage our user accounts and their tickets without losing track of our processes. However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
+- We will cover the following topics:
+
+Users/agents/custom agent roles
+Groups
+Organizations
+User tags
+Importing existing user databases (CSV file, Zendesk API)
+
+
 <br>
 <p align="center">
 <img src=".png"/>
