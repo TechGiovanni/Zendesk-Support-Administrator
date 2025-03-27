@@ -57,7 +57,7 @@ Our Ticketing Workflow:
 8. If the agent does not update the ticket with a given time frame, the ticket is moved back to its initial view.
 9. Another agent can now pick up the ticket.
 
-we will simply create Zendesk triggers and a custom ticket field as well as make use of automations. Using a macro called Push to Tier 2, allowing agents to push tickets to the Tier 2 view.
+We will simply create Zendesk triggers and a custom ticket field as well as make use of automations. Using a macro called Push to Tier 2, allowing agents to push tickets to the Tier 2 view.
 
 We need to set up the following:
 
@@ -75,15 +75,13 @@ Zendesk apps
 # <h2>Installation Steps</h2>
 
 - Create a virtual network
-- create an address space on that virtual network
+- Create an address space on that virtual network
 <br>
 <p align="center">
 <img src=".png"/>
 </p>
 
 - Create the virtual machine - Server 2022
-- use the same virtual network
-- create a subnet for the Active Directory Domain Server + click save
 
 
 <h2>The Zendesk environment</h2>
