@@ -114,7 +114,7 @@ The types of roles available:
 
 
 
-## Creating Custom Agent role
+# Creating Custom Agent role
 We don't have the enterprise Editions, but Lets me tell you how its done.
 
 1. Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
@@ -145,14 +145,14 @@ Tickets
 
 Only allowing the necessary permission for each role.For example, Tier 1 Techs, don't need permission to view or edit reports, as well as team leads don't need access to edit dynmic contents. Best to go with least privilege in order for that role to do their specific job and nothing more.
 
-- Custom roles for our example:
+Custom roles for our example if you have the enterprise:
 - Tier 1
 - Tier 2
 - VIP
 - Administrator
 
 
-# Groups
+# Creating Groups
 Groups are only meant for agents and each agent must be at least in one group.
 
 In our case, we have four types of support tickets:
@@ -161,5 +161,74 @@ In our case, we have four types of support tickets:
 - Tier 2 Support
 - VIP Support
 - Internal Support
+
+Each type of ticket is supposed to be answered by specific agents only. In order to achieve this, we will create one group for each type of ticket and later assign these groups to our agents accordingly.
+
+In order to review and edit already existing groups, simply follow these steps:
+
+1. Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
+2. Click on People located in Zendesk's sidebar within the admin menu.
+3. Click on groups within the Zendesk's sidebar menu:
+4. Then click the defualt group called "Support"
+
+<br>
+<p align="center">
+Tickets
+<img src="https://imgur.com/VkVTAdY.png"/>
+</p>
+
+As per our example, we will need four groups. In order to add a new group, simply follow these steps:
+
+1. While in the groups dashboard:
+2. Click on "Add group" located at the top right of the main area:
+
+<br>
+<p align="center">
+Tickets
+<img src="https://imgur.com/b0FBqry.png"/>
+</p>
+
+Creating a group is easy. We simply choose a name, add a description and tick the box next to each agent that we would like to be associated with this group:
+
+Note:
+There are two ways to add an agent to a group. While you may choose to navigate to the group itself in order to edit it, you can also assign groups to agents within their own user panel.
+
+<br>
+<p align="center">
+Tickets
+<img src="https://imgur.com/7nPmiyI.png"/>
+</p>
+
+
+# Creating User tags
+Reference Zendesk API Documentation: <a href="https://developer.zendesk.com/api-reference/ticketing/users/users/">Documentation</a>
+
+If you have coding experience, here are the necessary code snippets:
+
+For creating a new end-user:
+```
+curl -v -u {email_address}:{password} https://{subdomain}.zendesk.com/api/v2/users.json \  
+-H "Content-Type: application/json"  
+-X POST  
+-d '{"user": {"name": "FirstName LastName", "email": "user@example.org"}}' 
+```
+For updating an existing user:
+```
+curl -v -u {email_address}:{password} https://{subdomain}.zendesk.com/api/v2/users/{id}.json \ 
+-H "Content-Type: application/json"  
+-X PUT  
+-d '{"user": {"name": "Roger Wilco II"}}' 
+```
+
+# Importing existing user databases
+
+
+
+
+
+
+
+
+
 
 
