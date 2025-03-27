@@ -73,7 +73,9 @@ Reporting
 Zendesk apps
 
 So lets get started! :)
-<br>
+
+
+
 <h2>Agent Roles, Groups, Organizations, and User Tags</h2>
 
 - Here we are going to Manage our user accounts and their tickets without losing track of our processes. However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
