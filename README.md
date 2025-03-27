@@ -79,11 +79,11 @@ So lets get started! :)
 - Here we are going to Manage our user accounts and their tickets without losing track of our processes. However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
 - We will cover the following topics:
 
-Users/agents/custom agent roles
-Groups
-Organizations
-User tags
-Importing existing user databases (CSV file, Zendesk API)
+1. Users/agents/custom agent roles
+2. Groups
+3. Organizations
+4. User tags
+5. Importing existing user databases (CSV file, Zendesk API)
 
 
 <br>
