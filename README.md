@@ -5,12 +5,12 @@
 <h1>Zendesk Support Administrator</h1>
 Mastering the use of Zendesk for managing tickets and enterprise support.<br />
 
-
+<!--
 <h2>Video Demonstration</h2>
 
 (In progress)
 - ### [YouTube: Zendesk Support Administrator]()
-
+-->
 
 <h2>Environments and Technologies Used</h2>
 
@@ -115,19 +115,51 @@ The types of roles available:
 
 
 ## Creating Custom Agent role
+We don't have the enterprise Editions, but Lets me tell you how its done.
+
+1. Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
+2. Click on People located in the side menu of the admin menu.
+3. Click on role:
+
+The process of creating a custom role consists of naming and describing the role followed by defining the permissions
+
+<br>
+<p align="center">
+<img src="https://imgur.com/s1Ry4qE.png"/>
+</p>
+
+Permissions are categorized under the following headings:
+
+Tickets
+People
+Help Center
+Tools
+Channels
+System
+
+<br>
+<p align="center">
+Tickets
+<img src="https://imgur.com/Ye600kD.png"/>
+</p>
+
+Only allowing the necessary permission for each role.For example, Tier 1 Techs, don't need permission to view or edit reports, as well as team leads don't need access to edit dynmic contents. Best to go with least privilege in order for that role to do their specific job and nothing more.
+
+Custom roles for our example:
+Tier 1
+Tier 2
+VIP
+Administrator
 
 
+# Groups
+Groups are only meant for agents and each agent must be at least in one group.
 
+In our case, we have four types of support tickets:
 
-
-
-
-
-
-
-
-
-
-
+Tier 1 Support
+Tier 2 Support
+VIP Support
+Internal Support
 
 
