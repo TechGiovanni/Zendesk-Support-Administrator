@@ -79,7 +79,8 @@ Zendesk apps
 
 <h2>Agent Roles, Groups, Organizations, and User Tags</h2>
 
-- Here we are going to Manage our user accounts and their tickets without losing track of our processes. However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
+- Zendesk was built to communicate with millions of customers, so it is absolutely crucial to understand how we can manage our user accounts and their tickets without losing track of our processes.
+- However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
 - We will cover the following topics:
 
 1. Users/agents/custom agent roles
@@ -88,16 +89,33 @@ Zendesk apps
 4. User tags
 5. Importing existing user databases (CSV file, Zendesk API)
 
+## Users/agents
+- Agents are just like end users and are classified as users.
+- The role for end users is called <strong>end-user</strong>.
+- The difference, however, can be found in the assigned role. The role defines what a user can or cannot do and end users, for example, do not possess the necessary rights to log in to the actual helpdesk environment.
+- In Zendesk, <strong>users</strong> are also referred to as <strong>people</strong>. Both are equivalent terms. The same applies to the two terms <strong>end-users</strong> and <strong>customers</strong>.
 
+- You can easily access the whole list of users by following these two steps:
+
+1. Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
+2. then click "Go to Admin Center"
 <br>
 <p align="center">
-<img src=".png"/>
+<img src="https://imgur.com/jI9lfgN.png"/>
 </p>
 
-- Create the virtual machine - Server 2022
+3. Click on "People" located in Zendesk's sidebar within the admin menu:
+
+The types of roles available:
+<p>Agent/Staff: Has the permissions in order to solve tickets.</p>
+<p>Team leader: Allows more access to the Zendesk environment.</p>
+<p>Advisor: Cannot solve any tickets. This role is supposed to enable the user to manage Zendesk's workflows. This entails the ability to create and edit automations, triggers, macros, views, and SLAs.</p>
+<p>Administrator: Has additional permissions, allowing the user to customize and manage the Zendesk environment.</p>
 
 
-<h2>The Zendesk environment</h2>
+
+## Creating Custom Agent role
+
 
 
 
