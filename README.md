@@ -57,7 +57,20 @@ Our Ticketing Workflow:
 8. If the agent does not update the ticket with a given time frame, the ticket is moved back to its initial view.
 9. Another agent can now pick up the ticket.
 
-we will simply create Zendesk triggers and a custom ticket field as well as make use of automations.
+we will simply create Zendesk triggers and a custom ticket field as well as make use of automations. Using a macro called Push to Tier 2, allowing agents to push tickets to the Tier 2 view.
+
+We need to set up the following:
+
+Channels
+Custom fields
+Views
+Business rules
+Agent roles
+SLAs
+Macros
+Global Zendesk settings / Security settings
+Reporting
+Zendesk apps
 
 # <h2>Installation Steps</h2>
 
