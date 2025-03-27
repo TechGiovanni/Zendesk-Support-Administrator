@@ -40,7 +40,7 @@ itsolutions is still considered a start-up and cannot afford to provide customer
 <h2>Desired setup</h2>
 <br>
 <p align="center">
-<img src=".png"/>
+<img src="https://imgur.com/K0Tt867.png"/>
 </p>
 
 We will have different channels of receiving tickets from regular and VIP users. Within our Ticket Views, we will divide and pool certain tickets together. The company only hires Bilingual Agents so we only group the tickets based on a tier system and a specific group for VIPs.
@@ -56,6 +56,8 @@ Our Ticketing Workflow:
 7. If the customer replies, the ticket shows up in the agent's own view. The agent receives an e-mail notification.
 8. If the agent does not update the ticket with a given time frame, the ticket is moved back to its initial view.
 9. Another agent can now pick up the ticket.
+
+we will simply create Zendesk triggers and a custom ticket field as well as make use of automations.
 
 # <h2>Installation Steps</h2>
 
