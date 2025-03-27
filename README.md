@@ -73,7 +73,7 @@ Global Zendesk settings / Security settings
 Reporting
 Zendesk apps
 
-So lets get started! :)
+## So lets get started! :)
 </p>
 
 
