@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/g4QNc8p.png" alt="osTicket logo"/>
 </p>
 
-<h1>Zendesk Support Administrator</h1>
+# Zendesk Support Administrator (LAB)
 Mastering the use of Zendesk for managing tickets and enterprise support.<br />
 
 <!--
@@ -12,21 +12,26 @@ Mastering the use of Zendesk for managing tickets and enterprise support.<br />
 - ### [YouTube: Zendesk Support Administrator]()
 -->
 
-<h2>Environments and Technologies Used</h2>
+## Environments and Technologies Used 
 
 - Zendesk
 - Windows or Mac
 
-<h2>Operating Systems Used </h2>
+## Operating Systems Used
 
 - Windows 11</b> (24H2)
 
-<h2>List of Prerequisites</h2>
+## List of Prerequisites 
 
 - Zendesk Free trial
 
 <br>
-<h2>For this LAB, our model company is itsolutions.</h2>
+
+## Desired setup
+<br>
+<p align="center">
+<img src="https://imgur.com/K0Tt867.png"/>
+</p>
 
 The scalability of your setup highly depends on the early planning phase. Before we can go through the process of such an evaluation, we need to establish a far-reaching scenario by creating a fictitious example company. For the sake of simplicity and not having to refer to the company as an example throughout this lab, we will call it itsolutions.
 
@@ -35,13 +40,6 @@ itsolutions is a Canadian tech company selling their own software online. They a
 Next to offering their software for individual purchase, customers can choose a yearly subscription allowing them access to the full range of software solutions. These customers are called "VIPs" and can purchase the hardware to a discounted price. As part of the subscription, VIP customers are supposed to receive faster responses from the support team.
 
 itsolutions is still considered a start-up and cannot afford to provide customer-service in more than two languages (English and French), but are planning to offer support in more languages later on.
-
-
-<h2>Desired setup</h2>
-<br>
-<p align="center">
-<img src="https://imgur.com/K0Tt867.png"/>
-</p>
 
 <p>
 We will have different channels of receiving tickets from regular and VIP users. Within our Ticket Views, we will divide and pool certain tickets together. The company only hires Bilingual Agents so we only group the tickets based on a tier system and a specific group for VIPs.
@@ -62,26 +60,26 @@ We will simply create Zendesk triggers and a custom ticket field as well as make
 
 We need to set up the following:
 
-Channels
-Custom fields
-Views
-Business rules
-Agent roles
-SLAs
-Macros
-Global Zendesk settings / Security settings
-Reporting
-Zendesk apps
+- Channels
+- Custom fields
+- Views
+- Business rules
+- Agent roles
+- SLAs
+- Macros
+- Global Zendesk settings / Security settings
+- Reporting
+- Zendesk apps
 
 ## So lets get started! :)
 </p>
 
 
-<h2>Agent Roles, Groups, Organizations, and User Tags</h2>
+# Creating Agent Roles, Groups, Organizations, and User Tags
 
-- Zendesk was built to communicate with millions of customers, so it is absolutely crucial to understand how we can manage our user accounts and their tickets without losing track of our processes.
-- However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
-- We will cover the following topics:
+- Zendesk was built to communicate with millions of customers, so it is absolutely crucial to understand how we can manage our user accounts and their tickets without losing track of our processes. However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
+  
+- We will go over the following:
 
 1. Users/agents/custom agent roles
 2. Groups
@@ -95,10 +93,10 @@ Zendesk apps
 - The difference, however, can be found in the assigned role. The role defines what a user can or cannot do and end users, for example, do not possess the necessary rights to log in to the actual helpdesk environment.
 - In Zendesk, <strong>users</strong> are also referred to as <strong>people</strong>. Both are equivalent terms. The same applies to the two terms <strong>end-users</strong> and <strong>customers</strong>.
 
-- You can easily access the whole list of users by following these two steps:
+- We can easily access the whole list of users by following these two steps:
 
 1. Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
-2. then click "Go to Admin Center"
+2. then click "Go to Admin Center".
 <br>
 <p align="center">
 <img src="https://imgur.com/jI9lfgN.png"/>
@@ -107,21 +105,20 @@ Zendesk apps
 3. Click on "People" located in Zendesk's sidebar within the admin menu:
 
 The types of roles available:
-<p>Agent/Staff: Has the permissions in order to solve tickets.</p>
-<p>Team leader: Allows more access to the Zendesk environment.</p>
-<p>Advisor: Cannot solve any tickets. This role is supposed to enable the user to manage Zendesk's workflows. This entails the ability to create and edit automations, triggers, macros, views, and SLAs.</p>
-<p>Administrator: Has additional permissions, allowing the user to customize and manage the Zendesk environment.</p>
+- Agent/Staff: Has the permissions in order to solve tickets.
+- Team leader: Allows more access to the Zendesk environment.
+- Advisor: Cannot solve any tickets. This role is supposed to enable the user to manage Zendesk's workflows. This entails the ability to create and edit automations, triggers, macros, views, and SLAs.
+- Administrator: Has additional permissions, allowing the user to customize and manage the Zendesk environment.
 
 
-
-# Creating Custom Agent role
+## Creating Custom Agent role
 We don't have the enterprise Editions, but Lets me tell you how its done.
 
 1. Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
 2. Click on People located in the side menu of the admin menu.
-3. Click on role:
+3. Click on role.
 
-The process of creating a custom role consists of naming and describing the role followed by defining the permissions
+The process of creating a custom role consists of naming and describing the role followed by defining the permissions.
 
 <br>
 <p align="center">
@@ -151,7 +148,7 @@ Custom roles for our example if you have the enterprise:
 - Administrator
 
 
-# Creating Groups
+## Creating Groups
 Groups are only meant for agents and each agent must be at least in one group.
 
 In our case, we have four types of support tickets:
@@ -177,15 +174,15 @@ In order to review and edit already existing groups, simply follow these steps:
 
 As per our example, we will need four groups. In order to add a new group, simply follow these steps:
 
-1. While in the groups dashboard:
-2. Click on "Add group" located at the top right of the main area:
+1. While in the groups dashboard.
+2. Click on "Add group" located at the top right of the main area.
 
 <br>
 <p align="center">
 <img src="https://imgur.com/b0FBqry.png"/>
 </p>
 
-Creating a group is easy. We simply choose a name, add a description and tick the box next to each agent that we would like to be associated with this group:
+Creating a group is easy. We simply choose a name, add a description and tick the box next to each agent that we would like to be associated with this group.
 
 Note:
 There are two ways to add an agent to a group. While you may choose to navigate to the group itself in order to edit it, you can also assign groups to agents within their own user panel.
@@ -251,7 +248,7 @@ As we are importing new users only, we can uncheck Update existing users.
 
 In order for the bulk-import to work, we will need to prepare our CSV file accordingly. Zendesk states the following:
 
-"The data must be in the comma separated values (CSV) format and saved as UTF-8."
+- "The data must be in the comma separated values (CSV) format and saved as UTF-8."
 
 A good way to prepare such a file is using a spreadsheet program such as Microsoft Excel. Having our example in mind, we will create an example, importing the following details:
 
@@ -279,7 +276,7 @@ Congratulations, we have successfully imported a user into our Zendesk environme
 There are user fields, ticket fields, and organization fields.
 
 - Fields are, simply put, containers for information. 
-- You could say that users, tickets, and organizations are objects in Zendesk;
+- You could say that users, tickets, and organizations are objects in Zendesk.
 - Each containing a range of fields to hold the information describing the object.
 
 
@@ -313,7 +310,7 @@ The Drop-down list allows us to predefine answers, which we can then use as a co
 
 1. Click on "User fields" located  within the admin menu.
 2. Click on Checkbox located on the right within the main area.
-3. Then click "Add field"
+3. Then click "Add field".
 
 <br>
 <p align="center">
@@ -367,18 +364,50 @@ A little checkbox with the title VIP will now show up in every user's panel. Che
 
 <br>
 <p align="center">
-<img src="https://imgur.com/undefined.png"/>
+<img src="https://imgur.com/K3ddGwV.png"/>
 </p>
 
-
-
-
-
+Once we are done adding all the software options, simply click on "Save". and we have our field showing below.
 
 <br>
 <p align="center">
-<img src="https://imgur.com/undefined.png"/>
+<img src="https://imgur.com/T4FRGgn.png"/>
 </p>
+
+
+## Creating Organizational Custom Field
+
+- And here is an Organizational Custom Field for our third party company.
+- Adding custom organization fields is the same as adding user fields.
+
+<br>
+<p align="center">
+<img src="https://imgur.com/2wcEbIX.png"/>
+</p>
+
+
+Summary:
+- We learned about fields in Zendesk. 
+- We learned about the general purpose of fields and how we can create and utilize the custom user, ticket, and organization fields.
+
+
+
+# Setting Up Multiple Ticket Channels
+
+<br>
+<p align="center">
+<img src="https://imgur.com/2wcEbIX.png"/>
+</p>
+
+
+
+
+
+
+
+
+
+
 
 
 
