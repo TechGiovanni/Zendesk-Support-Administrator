@@ -309,11 +309,76 @@ To keep it simple, only the following two field types have very specific predefi
 Drop-down list
 The Drop-down list allows us to predefine answers, which we can then use as a condition in business rules. We can also decide for the Drop-down list to be displayed in the support form, allowing the end-user to select one of the options. There are a few different use-case scenarios. Overall, the Drop-down list is one of the most important and useful fields in our arsenal:
 
-So let's go ahead and add the first custom user field:
+## So let's go ahead and add the first custom user field:
 
-Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
-Click on User Fields located under MANAGE within the admin menu.
-Click on Checkbox located on the right within the main area:
+1. Click on "User fields" located  within the admin menu.
+2. Click on Checkbox located on the right within the main area.
+3. Then click "Add field"
+
+<br>
+<p align="center">
+<img src="https://imgur.com/OYJSszO.png"/>
+</p>
+
+We are now presented with a few options that we should take care of, before clicking on Create field:
+
+- Display name
+- Field key
+- Description (optional)
+- Tag (optional)
+
+<br>
+<p align="center">
+<img src="https://imgur.com/zQA8qNx.png"/>
+</p>
+
+- For field title, we are going for something like "VIP". The title is self-explanatory and our agents will understand it. 
+- Field key serves as an identifier for when we are using placeholders or the Zendesk API.
+- Description is optional, though it cannot hurt to add additional information.
+- Tag should be the same, which is vip.
+
+Once we have filled the form to our liking, we can create the field by clicking on "Save". If you wat to create more fields, there is an option to "Save and add another".
+
+A little checkbox with the title VIP will now show up in every user's panel. Checking the box will add the little string "vip" as a user tag. If that user decides to create a ticket, the ticket will also be tagged with "vip".
+
+
+## So let's go ahead and add our first custom ticket field:
+
+1. Click on Ticket Fields located within the admin menu on the left.
+2. Click on Objects and rules.
+3. Click on add field located on the top-right within the main area.
+
+
+<br>
+<p align="center">
+<img src="https://imgur.com/uumCxSp.png"/>
+</p>
+
+4. Click Drop-down
+
+- First, we need to find a title as it is shown to our agents within the ticket view. We can keep it simple and go with "Software".
+- Next, we choose whether the drop-down can be blank when solving a ticket. In this case, we do not check the "Required to solve ticket" option as we may receive tickets that are not related to any of our third-party's software products.
+
+5. Now it is time to add each single selectable option. Each field option consists of a Value (or Title) and a corresponding tag. You may want to follow strict rules when it comes to naming your tags with a focus on readability.
+
+- TIP:
+- Both for titles and descriptions, you are free to use dynamic content placeholders. That way, your support form can be displayed in different languages.
+
+
+<br>
+<p align="center">
+<img src="https://imgur.com/undefined.png"/>
+</p>
+
+
+
+
+
+
+<br>
+<p align="center">
+<img src="https://imgur.com/undefined.png"/>
+</p>
 
 
 
