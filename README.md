@@ -173,7 +173,7 @@ In order to review and edit already existing groups, simply follow these steps:
 
 <br>
 <p align="center">
-Tickets
+<p>Tickets</p>
 <img src="https://imgur.com/VkVTAdY.png"/>
 </p>
 
@@ -205,7 +205,7 @@ Reference Zendesk API Documentation: <a href="https://developer.zendesk.com/api-
 
 If you have coding experience, here are the necessary code snippets:
 
-For creating a new end-user:
+For creating a new end-user :
 ```
 curl -v -u {email_address}:{password} https://{subdomain}.zendesk.com/api/v2/users.json \  
 -H "Content-Type: application/json"  
@@ -221,10 +221,107 @@ curl -v -u {email_address}:{password} https://{subdomain}.zendesk.com/api/v2/use
 ```
 
 # Importing existing user databases
+In many cases, companies already have a huge amount of customers before the decision to use Zendesk has been made. In such a situation, it might be handy to have the option to import those users in bulk, especially if you like to set a user tag such as our vip tag.
+
+Zendesk offers us two different options when it comes to importing users in bulk:
+
+1. CSV file
+2. Zendesk API
+
+We will focus on option one as we have already covered the option to add Zendesk users, utilizing the Zendesk API when discussing user tags.
+
+- Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
+- Click on People located within the admin menu.
+- Click on "Import users" located on the left side of the main area under Bulk actions.
+- Click on Bulk user import located on the right side of the main area (located in a grey box):
+
+<br>
+<p align="center">
+Tickets
+<img src="https://imgur.com/3ypkASj.png"/>
+</p>
+
+Before uploading our CSV file, we can choose one or both of the following options:
+
+1. Create new users
+2. Update existing users
+
+<br>
+<p align="center">
+Tickets
+<img src="https://imgur.com/pXRTDgU.png"/>
+</p>
+
+As we are importing new users only, we can uncheck Update existing users.
+
+
+In order for the bulk-import to work, we will need to prepare our CSV file accordingly. Zendesk states the following:
+
+"The data must be in the comma separated values (CSV) format and saved as UTF-8."
+
+A good way to prepare such a file is using a spreadsheet program such as Microsoft Excel. Having our example in mind, we will create an example, importing the following details:
+
+1. Name
+2. Email
+3. Tags
+
+<br>
+<p align="center">
+Tickets
+<img src="https://imgur.com/bihqNp0.png"/>
+</p>
+
+While we are only using three fields, you can find a full list of available fields and the accepted order at the following link:
+
+<a href="https://support.zendesk.com/hc/en-us/articles/203661996-Bulk-importing-users-and-organizations">https://support.zendesk.com/hc/en-us/articles/203661996-Bulk-importing-users-and-organizations</a>
+
+Now simply click on Choose File, locate the file on your hard drive, and confirm by clicking on Import.
+
+Congratulations, we have successfully imported a user into our Zendesk environment!
 
 
 
+# Creating Custom Fields
 
+There are user fields, ticket fields, and organization fields.
+
+- Fields are, simply put, containers for information. 
+- You could say that users, tickets, and organizations are objects in Zendesk;
+- Each containing a range of fields to hold the information describing the object.
+
+
+## Standard ticket fields
+
+<br>
+<p align="center">
+Tickets
+<img src="https://imgur.com/4yTCfF4.png"/>
+</p>
+
+These are the available field types before going into more detail:
+
+- Drop-down list: Can be used in business rules.
+- Text: Allows for a simple single line of text, while limiting the answer to be a short and precise string.
+- Multi-line text: Allows for multiple lines of text. This can be used for instance to store a user's mailing address.
+- Numeric: Allows us to limit the input to integers, reducing possible mistakes.
+- Decimal: Allows us to give the option for decimal values.
+- Checkbox: The answer can only be yes or no. 
+- Regular expression: allows you to create a mask by entering a Ruby regular expression. This allows us to create a field limited to strings formatted in a particular way. This could be a registration key, product ID, or anything that follows strict syntax rules.
+- Date: Can be used fro a user's date of birth to a deadline for a project.
+
+To keep it simple, only the following two field types have very specific predefined options to select:
+
+1. Drop-down list
+2. Checkbox
+
+Drop-down list
+The Drop-down list allows us to predefine answers, which we can then use as a condition in business rules. We can also decide for the Drop-down list to be displayed in the support form, allowing the end-user to select one of the options. There are a few different use-case scenarios. Overall, the Drop-down list is one of the most important and useful fields in our arsenal:
+
+So let's go ahead and add the first custom user field:
+
+Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
+Click on User Fields located under MANAGE within the admin menu.
+Click on Checkbox located on the right within the main area:
 
 
 
