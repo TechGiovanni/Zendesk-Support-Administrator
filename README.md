@@ -139,7 +139,6 @@ Permissions are categorized under the following headings:
 
 <br>
 <p align="center">
-Tickets
 <img src="https://imgur.com/Ye600kD.png"/>
 </p>
 
@@ -173,7 +172,6 @@ In order to review and edit already existing groups, simply follow these steps:
 
 <br>
 <p align="center">
-<p>Tickets</p>
 <img src="https://imgur.com/VkVTAdY.png"/>
 </p>
 
@@ -184,7 +182,6 @@ As per our example, we will need four groups. In order to add a new group, simpl
 
 <br>
 <p align="center">
-Tickets
 <img src="https://imgur.com/b0FBqry.png"/>
 </p>
 
@@ -195,7 +192,6 @@ There are two ways to add an agent to a group. While you may choose to navigate 
 
 <br>
 <p align="center">
-Tickets
 <img src="https://imgur.com/7nPmiyI.png"/>
 </p>
 
@@ -237,7 +233,6 @@ We will focus on option one as we have already covered the option to add Zendesk
 
 <br>
 <p align="center">
-Tickets
 <img src="https://imgur.com/3ypkASj.png"/>
 </p>
 
@@ -248,7 +243,6 @@ Before uploading our CSV file, we can choose one or both of the following option
 
 <br>
 <p align="center">
-Tickets
 <img src="https://imgur.com/pXRTDgU.png"/>
 </p>
 
@@ -267,7 +261,6 @@ A good way to prepare such a file is using a spreadsheet program such as Microso
 
 <br>
 <p align="center">
-Tickets
 <img src="https://imgur.com/bihqNp0.png"/>
 </p>
 
@@ -294,7 +287,6 @@ There are user fields, ticket fields, and organization fields.
 
 <br>
 <p align="center">
-Tickets
 <img src="https://imgur.com/4yTCfF4.png"/>
 </p>
 
