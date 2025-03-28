@@ -471,7 +471,7 @@ v=spf1 include:mail.zendesk.com ?all
 - Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
 - Click on Email located under Channels within the admin menu.
 
-Deactivate this options:
+Deactivate (Uncheck) this options:
 
 1. Accept wildcard emails
 2. Personalized email replies
@@ -479,6 +479,19 @@ Deactivate this options:
 
 Activate this options:
 1. Mail delimiter
+
+
+
+
+
+## Facebook channel setup
+
+
+
+
+
+
+
 
 
 
