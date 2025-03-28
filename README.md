@@ -77,15 +77,17 @@ We need to set up the following:
 
 # Creating Agent Roles, Groups, Organizations, and User Tags
 
-- Zendesk was built to communicate with millions of customers, so it is absolutely crucial to understand how we can manage our user accounts and their tickets without losing track of our processes. However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
-  
-- We will go over the following:
-
 1. Users/agents/custom agent roles
 2. Groups
 3. Organizations
 4. User tags
 5. Importing existing user databases (CSV file, Zendesk API)
+   
+- Zendesk was built to communicate with millions of customers, so it is absolutely crucial to understand how we can manage our user accounts and their tickets without losing track of our processes. However, even when working with a smaller customer base, keeping scalability in mind is always a good tactic.
+  
+- We will go over the following:
+
+
 
 ## Users/agents
 - Agents are just like end users and are classified as users.
@@ -394,24 +396,94 @@ Summary:
 
 # Setting Up Multiple Ticket Channels
 
+- Zendesk provides us with the necessary channels of communication.
+- keep in mind that the more channels you open, the more agents will be required to cater to the support needs.
+- Channels enable customers to engage with your agents. They allow customers to create tickets as well as establish an ongoing string of communication.
+
+- Email: The email channel allows customers to contact our support directly by writing to one or more designated e-mail addresses. E-mail are turned into a ticket within the Zendesk environment. We would not want to supply internal e-mail addresses to the public, so and it makes sense to set up e-mail forwarding from an external e-mail address. That would look something like: support@itsolutions.com forwarded to support@itsolutions.zendesk.com.
+- Help Center
+- Facebook: You can add your company's facebook page to Zendesk. It will then start monitoring it for timeline posts, comments, and private chat messages. 
+- Twitter: Similar to the Facebook channel.
+- Chat (Zopim): Allows you to add a real-time chat option for your customers.
+- Voice: For telephone support, Setting call queue options, Recording greetings, Agents can take calls via Zendesk, Calls are recorded and added to a ticket, Customers can leave voicemails which are automatically turned into tickets, Phone forwarding.
+- Web Widget: Allows you to add a little widget to your website or Help Center. Search the Help Center for appropriate articles.
+- Mobile SDK: Allows you to embed certain Zendesk options within a mobile app. This is especially great for app developers.
+- API: API stands for Application Programming Interface. An API consists of a set of functions, which developers can access for the creation of their own applications.
+
+
+## Email channel setup
+
+Adding internal e-mail addresses.
+
+We will start by adding an internal e-mail address:
+
+1. Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
+3. Click on Email located under Channels within the admin menu.
+4. Click on Add address in the right corner under Support Addresses.
+5. Then click on Create new Zendesk address.
+
 <br>
 <p align="center">
-<img src="https://imgur.com/2wcEbIX.png"/>
+<img src="https://imgur.com/B3kipF6.png"/>
 </p>
 
 
+6. Next, we are asked to provide the first part of the e-mail address. We will create our main support address, let's go with "support".
+
+<br>
+<p align="center">
+<img src="https://imgur.com/rMP7AzF.png"/>
+</p>
+
+7. Once we click on "Create now", the new internal e-mail address is ready. E-mails sent to "support@itsolutions1360.zendesk.com" automatically become tickets.
+8. Now we can setup forwarding from our external email account/address for exampe using (Outlook), under "Mail" | "Accounts", click on "Forwarding" and send all emails to our Internal email that we just created.
+
+<br>
+<p align="center">
+<img src="https://imgur.com/90o2nzn.png"/>
+</p>
+
+Now what happens when we reply to the customer? Will the user receive the reply from the internal or the external e-mail address?
+
+Good question! In our current setup, Zendesk does not have the necessary rights to act as if they are replying from our external e-mail address. Instead, our customer will receive a reply from "support@examplecomp.zendesk.com". 
+
+That is not ideal. We might want to set up a Sender Policy Framework (SPF) record in order to allow Zendesk to send e-mails on behalf of our itsolutions e-mail server.
+
+Sidebar: Steps to setup SPF on Namecheap:
+
+1. Log in to our Namecheap account.
+2. Click on Domain List located in the left-side menu.
+3. Click on MANAGE next to the domain (examplecomp.com).
+4. Click on the Advanced DNS tab.
+5. Click on the Add new record.
+
+Simply select TXT Record as the Type, choose @ as Host, and the following text as the Value:
+
+```
+v=spf1 include:mail.zendesk.com ?all 
+```
+
+
+## Email channel settings
+
+- The Email channel has many settings, lets update it.
+
+- Click on the Admin icon (gear symbol) located in Zendesk's sidebar.
+- Click on Email located under Channels within the admin menu.
+
+Deactivate this options:
+
+1. Accept wildcard emails
+2. Personalized email replies
+3. Gmail Go-to Actions (For our example, we do not need to enable this option)
+
+Activate this options:
+1. Mail delimiter
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<p align="center">
+<img src="https://imgur.com/Xipxl1e.png"/>
+</p>
 
